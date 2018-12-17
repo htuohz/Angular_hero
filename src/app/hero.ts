@@ -1,7 +1,8 @@
 export class Hero {
-    jobTitle: any;
-    jobDateTime: any;
-    jobType: any;
-    jobLocation: any;
-    jobURL: any;
+    public jobTitle: any;
+    public jobDateTime: any;
+    public jobType: any;
+    public jobLocation: any;
+    public jobURL: any;
+    public jobID: number;
   }

@@ -1,10 +1,13 @@
-<h2>My Heroes</h2>
+<h2>Jobs</h2>
 <ul class="heroes">
-  <li *ngFor="let hero of heroes" routerLink="{{hero.jobURL}}">
-    <a>
-      
-    </a>  
-  </li>
+  <div *ngFor="let hero of heroes" >
+    <a routerLink="/detail/{{hero.jobID}}">
+      <span>{{hero.jobTitle}}</span>
+    </a>
+    <p>Job Type: {{hero.jobType}}</p>  
+    <p>Location: {{hero.jobLocation}}</p>  
+    <br>
+  </div>
 </ul>
 
 
